@@ -1,0 +1,165 @@
+
+
+section.container div#anuncioproduto{
+    width: 100%;
+    float: left;
+    text-align: center;
+    color: #fff;
+    background-color: #232323;
+    padding: 5px 0;
+    margin-bottom: 20px;
+}
+section.container div#conteudo ul#album-fotos{
+	width: 88%;
+	margin:auto;
+	 
+	padding:50px;
+	list-style:none;
+	overflow:hidden;	
+}
+
+section.container div#conteudo ul#album-fotos li{
+	float:left;
+	width:200px;
+	height: 141px;
+	background-color:#ffffff;
+	margin:10px;
+	border:5px solid #ffffff;
+	box-shadow:2px 2px 3px rgba(0,0,0,.4);
+    -webkit-transition:0.5s ease-in;
+}
+
+section.container div#conteudo ul#album-fotos li#foto01{
+	background:url(../images/fps1.png);
+	background-position:50% 50%;
+	background-size:400px 400px;
+}
+
+section.container div#conteudo ul#album-fotos li#foto02{
+	background:url(../images/corrida1.png);
+	background-position:50% 50%;
+	background-size:400px 400px;
+}
+
+section.container div#conteudo ul#album-fotos li#foto03{
+	background:url(../images/rpg1.png);
+	background-position:50% 50%;
+	background-size:400px 400px;
+}
+
+section.container div#conteudo ul#album-fotos li#foto04{
+	background:url(../images/sobrevivencia1.png);
+	background-position:50% 50%;
+	background-size:400px 400px;
+}
+
+section.container div#conteudo ul#album-fotos li#foto05{
+	background:url(../images/fps2.png);
+	background-position:50% 50%;
+	background-size:400px 400px;
+}
+
+section.container div#conteudo ul#album-fotos li#foto06{
+	background:url(../images/corrida2.png);
+	background-position:50% 50%;
+	background-size:400px 400px;
+}
+section.container div#conteudo ul#album-fotos li#foto07{
+	background:url(../images/rpg2.png);
+	background-position:50% 50%;
+	background-size:400px 400px;
+}section.container div#conteudo ul#album-fotos li#foto08{
+	background:url(../images/sobrevivencia2.png);
+	background-position:50% 50%;
+	background-size:400px 400px;
+}section.container div#conteudo ul#album-fotos li#foto09{
+	background:url(../images/fps3.png);
+	background-position:50% 50%;
+	background-size:400px 400px;
+}section.container div#conteudo ul#album-fotos li#foto10{
+	background:url(../images/corrida3.png);
+	background-position:50% 50%;
+	background-size:400px 400px;
+}section.container div#conteudo ul#album-fotos li#foto11{
+	background:url(../images/rpg3.png);
+	background-position:50% 50%;
+	background-size:400px 400px;
+}section.container div#conteudo ul#album-fotos li#foto12{
+	background:url(../images/sobrevivencia3.png);
+	background-position:50% 50%;
+	background-size:400px 400px;
+}
+
+section.container div#conteudo ul#album-fotos li span{
+	color:#ffffff;
+	text-shadow:1px 1px 1px #000000;
+	background-color:rgba(0,0,0,0.3);
+	font-size:15px;
+	padding:5px;
+	line-height:370px;
+	opacity:0;	
+}
+
+section.container div#conteudo ul#album-fotos li:hover span{
+	opacity:1;
+}
+
+section.container div#conteudo ul#album-fotos li#foto01:hover{
+    background-size: 200px 200px;
+}
+
+section.container div#conteudo ul#album-fotos li#foto02:hover{
+    background-size: 200px 200px;
+}
+
+section.container div#conteudo ul#album-fotos li#foto03:hover{
+    background-size: 200px 200px;
+}
+
+section.container div#conteudo ul#album-fotos li#foto04:hover{
+    background-size: 200px 200px;
+}
+
+section.container div#conteudo ul#album-fotos li#foto05:hover{
+    background-size: 200px 200px;
+}
+
+section.container div#conteudo ul#album-fotos li#foto06:hover{
+    background-size: 200px 200px;
+}
+section.container div#conteudo ul#album-fotos li#foto07:hover{
+    background-size: 200px 200px;
+}
+
+section.container div#conteudo ul#album-fotos li#foto08:hover{
+    background-size: 200px 200px;
+}
+
+section.container div#conteudo ul#album-fotos li#foto09:hover{
+    background-size: 200px 200px;
+}
+
+section.container div#conteudo ul#album-fotos li#foto10:hover{
+    background-size: 200px 200px;
+}
+
+section.container div#conteudo ul#album-fotos li#foto11:hover{
+    background-size: 200px 200px;
+}
+
+section.container div#conteudo ul#album-fotos li#foto12:hover{
+    background-size: 200px 200px;
+}
+
+section.container div#conteudo ul#album-fotos li:hover{
+    -webkit-transform:scale(1.5);
+    -webkit-transition:0.5s ease-in;
+}
+.contents{
+	float: left;
+	width: 55%;
+	margin: 0 0 0 10px;
+}
+.restrito{
+    margin-left: 50%;
+}

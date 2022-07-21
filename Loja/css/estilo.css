@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+}
+
+body{
+    background-color: gray;
+}
+
+section.container{
+    width: 95%;
+    max-width: 1382 px; /*Largura Maxima*/
+    height: auto;
+    margin: auto;
+}
+
+section.container div#banner{
+    width: 100%;
+    height: auto;
+}

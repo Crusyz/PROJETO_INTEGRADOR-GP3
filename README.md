@@ -2,6 +2,8 @@
 Tripo Games 
 </h1>
 
+## Em desenvolvimento
+
 
 ## Indice
 - [Sobre](#Sobre)

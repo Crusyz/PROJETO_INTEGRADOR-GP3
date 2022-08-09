@@ -1,0 +1,68 @@
+PC Genêro
+- fps->
+
+JOGO 1- RAINBOW SIX/SIEGE
+
+LANÇAMENTO- 09/06/2014
+
+DESENVOLVEDORA- UBSOFT
+
+DESCRIÇÃO- Mergulha de cabeça em combates 5 contra 5, competições exigentes e emocionantes batalhas de equipa em PVP. Tom Clancy's Rainbow Six® Siege é uma experiência em expansão com oportunidades ilimitadas para aperfeiçoares a tua estratégia e liderares a tua equipa até à vitória.
+O Siege está em constante evolução. Cada temporada traz novos conteúdos, novos Agentes e habilidades, novos eventos, armas e mapas.Começa com a experiência base de Rainbow Six Siege, que inclui o jogo completo com todos os mapas e modos.
+
+REQUISITOS- MÍNIMA:
+SISTEMA OPERACIONAL: 64-bit version of the following operating systems: Windows 7 SP1 / Windows 8 / Windows 8.1 / Windows 10
+PROCESADOR: Intel Core i3 560 @ 3.3 GHz or AMD Phenom II X4 945 @ 3.0 GHz**
+MEMÓRIA RAM: 6 GB
+PLACA DE VÍDEO: Nvidia GeForce GTX 460 or AMD Radeon HD5770 (1024MB VRAM)
+DISCO RÍGIDO: 85.5 GB
+DIRECTX: DirectX 11
+SOM: DirectX Compatible Sound Card with latest drivers
+PERIFÉRICOS: Compatible with X-Input
+
+RECOMENDADA:
+SISTEMA OPERACIONAL: 64-bit version of the following operating systems: Windows 7 SP1 / Windows 8 / Windows 8.1 / Windows 10
+PROCESADOR: Intel Core i5-2500K @ 3.3 GHz or AMD FX-8120 @ 2.6 GHz**
+MEMÓRIA RAM: 8 GB
+PLACA DE VÍDEO: Nvidia GeForce GTX 670 or AMD Radeon HD7970 / R9 280X or better (2048MB VRAM)
+DISCO RÍGIDO: 85.5 GB
+DIRECTX: DirectX 11
+SOM: DirectX Compatible Sound Card with latest drivers
+PERIFÉRICOS: Compatible with X-Input
+
+CRITICA- 79
+
+
+
+JOGO 2- CS GO
+
+DESENVOLVEDORA- VALVE
+
+LANÇAMENTO- 21/08/2012
+
+DESCRIÇÃO- "O Counter-Strike surpreendeu a indústria de jogos quando o mod improvável se tornou o jogo de ação de PC mais jogado no mundo quase imediatamente após o seu lançamento, em agosto de 1999. Durante os últimos anos, continuou a ser um dos jogos mais jogados do mundo, foi o jogo principal de inúmeros torneios competitivos e vendeu mais de 25 milhões de cópias no mundo inteiro. O CS:GO promete expandir a jogabilidade popular do jogo e trazê-la não só para o PC, mas também para os consoles de última geração e para Macs", disse Doug Lombardi, da Valve.
+
+REQUISITOS- MÍNIMOS:
+SO: Windows® 7/Vista/XP
+Processador: Intel® Core™ 2 Duo E6600 ou AMD Phenom™ X3 8750
+Memória: 2 GB de RAM
+Placa de vídeo: A placa de vídeo precisa ter 256 MB ou mais de memória e ser compatível com DirectX 9 e Pixel Shader 3.0
+DirectX: Versão 9.0c
+Armazenamento: 15 GB de espaço disponível
+
+CRITICA- 83
+
+
+JOGO 3- VALORANT
+
+LANÇAMENTO- 02/06/2020
+
+DESENVOLVEDORA- RIOT GAMES
+
+DESCRIÇÃO- Um jogo de tiro multijogador 5x5 com personagens da Riot Games. Disponível no mundo todo. Jogue com amigos. Lutem e vençam juntos com trabalho em equipe e estratégia. Gratuito. Esports. 5x5. Baixa latência. Ranqueadas. Jogo em Equipe. Novos Agentes.
+
+REQUISITOS- INTEL CORE 2 DUO E8400 INTEL, ATON 200GE AMD
+
+CRITICA- 80
+
+

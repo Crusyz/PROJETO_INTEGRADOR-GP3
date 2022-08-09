@@ -35,3 +35,19 @@ function fnAtualizaSenha($email, $senha)
 
     return false;
 }
+
+function fnADM($id)
+{
+    $con = getConnection();
+
+    $sql = "select * from login where id = 1";
+
+    $stmt = $con->prepare($sql);
+    $stmt->bindParam("1", $id);
+
+    if ($stmt->execute()) {
+        return $stmt->fetch(PDO::FETCH_OBJ);
+    }
+
+    return null;
+}

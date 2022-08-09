@@ -1,6 +1,8 @@
 <?php
 require_once('Connection.php');
 
+#CRUD produto
+
 function fnAddJogo($nome, $foto, $descricao, $lancamento, $critica)
 {
     $con = getConnection();

@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: gray;
+   background:url(../images/fundo.png);
 }
 
 section.container{
@@ -18,4 +18,5 @@ section.container{
 section.container div#banner{
     width: 100%;
     height: auto;
+    
 }

@@ -1,6 +1,6 @@
 <?php
 
-require_once('Repository/JogoRepository.php');
+require_once('repository/JogoRepository.php');
 session_start();
 
 if (fnDeleteJogo($_SESSION['id'])) {

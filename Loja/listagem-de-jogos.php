@@ -45,7 +45,7 @@ $nome = filter_input(INPUT_GET, 'nome', FILTER_SANITIZE_SPECIAL_CHARS);
     <div class="menu">
         <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.php">Inicio</a>
+                <a class="navbar-brand" href="index.html">Inicio</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -66,12 +66,12 @@ $nome = filter_input(INPUT_GET, 'nome', FILTER_SANITIZE_SPECIAL_CHARS);
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="formulario-cadastro-cliente.php">Cadastro</a>
                         </li>
-
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="login.html">Login</a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="logout.php">Logout</a>
                         </li>
-
-
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="listagem-de-jogos.php">Jogos</a>
                         </li>

@@ -221,7 +221,7 @@ section.container div#conteudo ul#album-fotos li:hover{
 	width: 200px;
 	height: 200px;
 	display: inline;
-	margin-top: -100px;
+	margin-top: -110px;
 }
 .texto{
 	width: 30%;
@@ -234,13 +234,13 @@ section.container div#conteudo ul#album-fotos li:hover{
 	width: 29%;
 	float: right;
 	color: #fff;
-	margin-top: -400px;
+	margin-top: -390px;
 }
 .p3{
 	width: 29%;
 	float: right;
 	color: #fff;
-	margin-top: -380px;
+	margin-top: -370px;
 }
 .botao2{
 	width: 52% ;

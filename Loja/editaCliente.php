@@ -1,5 +1,5 @@
 <?php
-require_once('Repository/ClienteRepository.php');
+require_once('repository/ClienteRepository.php');
 
 session_start();
 

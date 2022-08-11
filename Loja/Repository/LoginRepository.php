@@ -19,35 +19,32 @@ function fnLogin($email, $senha)
     return null;
 }
 
-function fnAtualizaSenha($email, $senha)
+function fnAddLogin($email, $senha)
 {
     $con = getConnection();
 
-    $sql = "update login set senha = :pSenha where email = :pEmail";
+    $sql = "insert into login (email, senha) values (:pEmail, :pSenha)";
 
     $stmt = $con->prepare($sql);
     $stmt->bindParam(":pEmail", $email);
     $stmt->bindValue(":pSenha", md5($senha));
 
-    if ($stmt->execute()) {
-        return true;
-    }
-
-    return false;
+    return $stmt->execute();
 }
 
-function fnADM($id)
-{
-    $con = getConnection();
+// function fnAtualizaSenha($email, $senha)
+// {
+//     $con = getConnection();
 
-    $sql = "select * from login where id = 1";
+//     $sql = "update login set senha = :pSenha where email = :pEmail";
 
-    $stmt = $con->prepare($sql);
-    $stmt->bindParam("1", $id);
+//     $stmt = $con->prepare($sql);
+//     $stmt->bindParam(":pEmail", $email);
+//     $stmt->bindValue(":pSenha", md5($senha));
 
-    if ($stmt->execute()) {
-        return $stmt->fetch(PDO::FETCH_OBJ);
-    }
+//     if ($stmt->execute()) {
+//         return true;
+//     }
 
-    return null;
-}
+//     return false;
+// }

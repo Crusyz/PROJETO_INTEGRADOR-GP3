@@ -5,7 +5,7 @@
 }
 
 body{
-   background:url(../images/fundo.png);
+   background:url(../images/home/fundo.png);
 }
 
 section.container{
@@ -13,10 +13,11 @@ section.container{
     max-width: 1382 px; /*Largura Maxima*/
     height: auto;
     margin: auto;
+    
 }
 
 section.container div#banner{
     width: 100%;
     height: auto;
-    
+   margin-left: 18%;
 }

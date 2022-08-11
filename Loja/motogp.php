@@ -1,4 +1,12 @@
-﻿<!doctype html>
+<?php
+include('config.php');
+require_once('repository/LoginRepository.php');
+$condicao = ($_SESSION['login'] == fnLogin('admin@triplo.com', 'admin@123'));
+// if (!isset($_SESSION['login'])) {
+//   $n_condicao;
+// }
+?>
+<!doctype html>
 <html>
 
 <head>
@@ -33,7 +41,7 @@
     <div class="menu">
         <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">Inicio</a>
+                <a class="navbar-brand" href="index.php">Inicio</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -42,7 +50,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="catalogo.html">Catálogo</a>
+                            <a class="nav-link active" aria-current="page" href="catalogo.php">Catálogo</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Genêros</a>
@@ -58,7 +66,7 @@
                                 href="formulario-cadastro-cliente.php">Cadastro</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="login.html">Login</a>
+                            <a class="nav-link active" aria-current="page" href="login.php">Login</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="logout.php">Logout</a>
@@ -66,9 +74,11 @@
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="listagem-de-jogos.php">Jogos</a>
                         </li>
+                        <?php if ($condicao) : ?>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="listagem-de-clientes.php">Clientes</a>
                         </li>
+                        <?php endif; ?>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Action</a></li>
                             <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -88,76 +98,47 @@
             </div>
         </nav>
     </div>
-    <br>
-    <section class="container">
-
-        <header class="topo">
-
-            <!--  <div class="logo">
-                <img src="..." width="190" height="170">
-            </div> -->
-
-
-
-        </header>
-        <!--Fim Topo-->
-
-        <div id="banner">
-            <!--Inicio banner-->
-
-            <!--deixar banner clicavel " <a href="login.html"> " -->
-
-            <div class="slider-wrapper theme-default">
-                <div id="slider" class="nivoSlider">
-                    <img src="images/banner1.jpg" data-thumb="image/0.jpg" title="Nome 1" />
-                    <img src="images/banner2.png" data-thumb="images/1.png" title="Nome 2" />
-                    <img src="images/banner3.jpg" data-thumb="images/3.png" title="Nome 3" />
-                    <img src="images/banner4.png" data-thumb="images/2.jpg" title="Nome 4"
-                        data-transition="slideInLeft" />
-
-                </div>
-            </div>
-        </div><!-- Fim banner-->
-
-        <br>
-        <br>
-        <br>
-        <div id="anuncioproduto">
-            Jogos em destaques
-
-        </div>
-        <div id="conteudo">
-
-            <ul id="album-fotos">
-                <!--imagem clicavel-->
-                <!--- <a href="file:///C:/Users/junior/Desktop/HTML/login.html">-->
-                <!--<img src="foto01">-->
-                <li id="foto01"> <span> Agenda e lembretes</span> </li>
-                <li id="foto02"> <span> Aparelho leve</span> </li>
-                <li id="foto03"> <span> Leve compacto</span> </li>
-                <li id="foto04"> <span> Tecnologia avançada</span> </li>
-                <li id="foto05"> <span> Varios modelos</span> </li>
-                <li id="foto06"> <span> Promoção imperdivel</span> </li>
-                <li id="foto07"> <span> jodo 7</span> </li>
-                <li id="foto08"> <span> jogo 8</span> </li>
-                <li id="foto09"> <span> jogo 9</span> </li>
-                <li id="foto10"> <span> jogo 10</span> </li>
-                <li id="foto11"> <span> jogo 11</span> </li>
-                <li id="foto12"> <span> jogo 12</span> </li>
-
-            </ul>
-            <!--Fim album Fotos-->
-
-        </div>
-        <!--Fim Conteúdo-->
-
-
-    </section>
-    <!--Fim container-->
-
-
-
-
 </body>
+<!--<main class="main">-->
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3qNjQPi_NZI?start=1" title="YouTube video player"
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen class="video"></iframe>
+
+<img src="images/jogos/Jogos-corrida/MotoGP 22/2.png" class="foto-produto">
+<img src="images/jogos/Jogos-corrida/MotoGP 22/3.png" class="foto-produto">
+<img src="images/jogos/Jogos-corrida/MotoGP 22/4.png" class="foto-produto">
+
+<div class="texto">
+    <p class="p1">
+        Motores ligados: dê a largada para a experiência de jogo mais imersiva e autêntica da MotoGP™. O virtual e o
+        real nunca estiveram tão próximos quanto no MotoGP™22!
+        Explore todo o conteúdo da Temporada 2022 nas categorias da MotoGP™ e em muitas outras.
+        Mais de 120 pilotos esperam para competir em mais de 20 circuitos, com toda a emoção do campeonato oficial.
+        E, se quiser voltar no tempo, você poderá reencenar os melhores momentos da história da MotoGP™ com mais de 70
+        campeões históricos.</p>
+</div>
+<p class="p2">
+    Moto GP 22
+</p>
+<p class="p3">
+    R$:264,99
+</p>
+<button class="botao2">COMPRAR</button>
+<P class="p4">
+    Requer um processador e sistema operacional de 64 bits;
+    SO: Windows 8.1 64-Bit or later;
+    Processador: Intel Core i3-4160 (2 * 3600) - AMD FX-4350 (4 * 4200) or equivalent;
+    Memória: 8 GB de RAM;
+    Placa de vídeo: GeForce GT 640 (2048 VRAM) - Radeon R7 250 (2048 VRAM) or equivalent;
+    DirectX: Versão 11;
+    Armazenamento: 30 GB de espaço disponível;
+
+</P>
+<p class="p5">
+    Desenvolvedora: Milestone S.r.l / CRíTICA: 76
+</p>
+
+
 
 </html>

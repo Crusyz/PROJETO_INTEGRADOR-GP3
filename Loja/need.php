@@ -1,38 +1,44 @@
+<?php
+include('config.php');
+require_once('repository/LoginRepository.php');
+if (!isset($_SESSION['login'])) {
+  $n_condicao;
+}
+$condicao = ($_SESSION['login'] == fnLogin('admin@triplo.com', 'admin@123'));
+
+?>
 <!doctype html>
-<html lang="pt_BR">
+<html>
 
 <head>
-    <title>Loja Games</title>
+    <meta charset="utf-8">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <head>
+        <title>Loja Games</title>
 
-    <link rel="stylesheet" href="css/default.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="css/estilo.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="css/index.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="css/default.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
 
-    <script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
-    <script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
-    <script type="text/javascript">
-    $(window).load(function() {
-        $('#slider').nivoSlider();
-    });
-    </script>
+        <link rel="stylesheet" href="css/estilo.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="css/index.css" type="text/css" media="screen" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+        <script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+        <script type="text/javascript">
+        $(window).load(function() {
+            $('#slider').nivoSlider();
+        });
+        </script>
 
-    <style>
-    div,
-    label {
-        color: white;
-    }
-    </style>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-</head>
+    </head>
 
 <body>
+
     <div class="menu">
         <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
@@ -85,42 +91,54 @@
                         </li>
 
                     </ul>
-                    <form class="d-flex" role="search" method="post" action="localiza-cliente.php">
-                        <input class="form-control me-2" name="nomeCliente" type="search" placeholder="Buscar na loja"
-                            aria-label="Search">
+                    <form class="d-flex" role="search" method="post" action="localiza-jogo.php">
+                        <input class="form-control me-2" type="search" placeholder="Buscar na loja" aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Buscar</button>
                     </form>
                 </div>
             </div>
         </nav>
     </div>
-    <div class="col-6 offset-3">
-        <fieldset>
-            <legend>Cadastro de Cliente</legend>
-            <form action="registraCliente.php" method="post" class="form" enctype="multipart/form-data">
-                <div class="mb-3 form-group">
-                    <label for="nomeId" class="form-label">Nome</label>
-                    <input type="text" name="nome" id="nomeId" class="form-control"
-                        placeholder="Informe o nome completo">
-                    <div id="helperNome" class="form-text">Informe o nome completo</div>
-                </div>
-                <div class="mb-3 form-group">
-                    <label for="emailId" class="form-label">Email</label>
-                    <input type="email" name="email" id="emailId" class="form-control" placeholder="Informe o email">
-                    <div id="helperEmail" class="form-text">Informe o email</div>
-                </div>
-                <div class="mb-3 form-group">
-                    <label for="senhaId" class="form-label">Senha</label>
-                    <input type="password" name="senha" id="senhaId" class="form-control" placeholder="Informe a senha">
-                    <div id="helperSenha" class="form-text">Informe a senha</div>
-                </div>
-                <button type="submit" class="btn btn-dark">Enviar</button>
-                <div id="notify" class="form-text text-capitalize fs-4">
-                    <?= isset($_COOKIE['notify']) ? $_COOKIE['notify'] : '' ?></div>
-            </form>
-        </fieldset>
-    </div>
-    <script src="js/base64.js"></script>
 </body>
+<!--<main class="main">-->
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9ewiJJe_nYI?start=1" title="YouTube video player"
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen class="video"></iframe>
+
+<img src="images/jogos/Jogos-corrida/Need for Speed Heat/2.png" class="foto-produto">
+<img src="images/jogos/Jogos-corrida/Need for Speed Heat/3.png" class="foto-produto">
+<img src="images/jogos/Jogos-corrida/Need for Speed Heat/4.png" class="foto-produto">
+
+<div class="texto">
+    <p class="p1">
+        Dê duro durante o dia e arrisque tudo à noite em Need for Speed™ Heat, um jogo de corridas de rua puro e duro,
+        onde a lei desaparece com o pôr do sol. De dia, Palm City organiza o Speedhunter Showdown, uma competição
+        oficial para acumular saldo para personalizar e melhorar seus veículos de alta performance. De noite, aumente a
+        tensão com corridas ilegais para construir sua reputação e acessar corridas mais valiosas e peças mais
+        impressionantes. Mas cuidado... os policiais estão alertas e não vão jogar limpo.</p>
+</div>
+<p class="p2">
+    Need For Speed Heat
+</p>
+<p class="p3">
+    R$:279,00
+</p>
+<button class="botao2">COMPRAR</button>
+<P class="p4">
+    Requer um processador e sistema operacional de 64 bits;
+    SO: Windows 10;
+    Processador: FX-6350 or Equivalent; Core i5-3570 or Equivalent;
+    Memória: 8 GB de RAM;
+    Placa de vídeo: AMD: Radeon 7970/Radeon R9 280x or Equivalent; NVIDIA: GeForce GTX 760 or Equivalent;
+    DirectX: Versão 11;
+    Armazenamento: 50 GB de espaço disponível;
+
+</P>
+<p class="p5">
+    Desenvolvedora: Ghost Games / CRíTICA: 72
+</p>
+
+
 
 </html>

@@ -3,14 +3,14 @@ section.container div#anuncioproduto{
     float: left;
     text-align: center;
     color: #fff;
-    background-color: #232323;
+    background-color: rgba(155, 12, 238, 0.089);
     padding: 5px 0;
     margin-bottom: 20px;
 }
 section.container div#conteudo ul#album-fotos{
 	width: 88%;
 	margin:auto;
-	background-color:#fff;
+	background-color:rgba(155, 12, 238, 0.089);
 	padding:50px;
 	list-style:none;
 	overflow:hidden;	
@@ -22,68 +22,68 @@ section.container div#conteudo ul#album-fotos li{
 	height:200px;
 	background-color:#ffffff;
 	margin:10px;
-	border:5px solid #ffffff;
+	border:5px solid #9c3397f3;
 	box-shadow:2px 2px 3px rgba(0,0,0,.4);
     -webkit-transition:0.5s ease-in;
 }
 
 section.container div#conteudo ul#album-fotos li#foto01{
-	background:url(../images/1.jpg);
+	background:url(../images/home/csgo.png);
 	background-position:50% 50%;
 	background-size:400px 400px;
 }
 
 section.container div#conteudo ul#album-fotos li#foto02{
-	background:url(../images/2.jpeg);
+	background:url(../images/home/dayz.png);
 	background-position:50% 50%;
 	background-size:400px 400px;
 }
 
 section.container div#conteudo ul#album-fotos li#foto03{
-	background:url(../images/3.jpg);
+	background:url(../images/home/mine.png);
 	background-position:50% 50%;
 	background-size:400px 400px;
 }
 
 section.container div#conteudo ul#album-fotos li#foto04{
-	background:url(../images/4.jpg);
+	background:url(../images/home/forza.png);
 	background-position:50% 50%;
 	background-size:400px 400px;
 }
 
 section.container div#conteudo ul#album-fotos li#foto05{
-	background:url(../images/5.jpg);
+	background:url(../images/home/r6.png);
 	background-position:50% 50%;
 	background-size:400px 400px;
 }
 
 section.container div#conteudo ul#album-fotos li#foto06{
-	background:url(../images/6.jpg);
+	background:url(../images/home/gen.png);
 	background-position:50% 50%;
 	background-size:400px 400px;
 }
 section.container div#conteudo ul#album-fotos li#foto07{
-	background:url(../images/7.jpg);
+	background:url(../images/home/raft.png);
 	background-position:50% 50%;
 	background-size:400px 400px;
 }section.container div#conteudo ul#album-fotos li#foto08{
-	background:url(../images/8.jpg);
+	background:url(../images/home/gp.png);
 	background-position:50% 50%;
 	background-size:400px 400px;
 }section.container div#conteudo ul#album-fotos li#foto09{
-	background:url(../images/9.jpg);
+	background:url(../images/home/valorant.png);
 	background-position:50% 50%;
 	background-size:400px 400px;
 }section.container div#conteudo ul#album-fotos li#foto10{
-	background:url(../images/10.jpg);
+	background:url(../images/home/under.png);
 	background-position:50% 50%;
 	background-size:400px 400px;
 }section.container div#conteudo ul#album-fotos li#foto11{
-	background:url(../images/11.jpg);
+	background:url(../images/home/ds3.png);
 	background-position:50% 50%;
 	background-size:400px 400px;
 }section.container div#conteudo ul#album-fotos li#foto12{
-	background:url(../images/12.jpg);
+	background:url(../images/home/need.png);
 	background-position:50% 50%;
 	background-size:400px 400px;
 }
@@ -167,7 +167,7 @@ section.container div#conteudo ul#album-fotos li:hover{
 	max-width: 1200px;
 	height: 500px;
 	margin: 0 auto;
-	margin-top: 50px;
+	margin-top: 10px;
 	
 }
 .content-cards{
@@ -179,11 +179,12 @@ section.container div#conteudo ul#album-fotos li:hover{
 .card{
 	width: 250px;
 	height: auto; /*255px sem height*/
-	border: 1px solid gray;
+	border: 1px solid rgba(155, 12, 238, 0.089);
 	margin: 20px;
 	box-sizing: border-box;
 	padding: 10px;
 	display: inline-flex;
+	background-color: rgba(155, 12, 238, 0.089);
 }
 .card > .imagem-produto{
 	width: 100%;
@@ -192,6 +193,7 @@ section.container div#conteudo ul#album-fotos li:hover{
 .card > .titulo-produto{
 	font-size: 20px;
 	font-weight: bold;
+	color: #fff;
 }
 .botao-comprar{
 	width: 100%;
@@ -205,12 +207,41 @@ section.container div#conteudo ul#album-fotos li:hover{
 }
 .card > .valor{
 	margin-top: -10px;
+	color: #fff;
 }
 .catalogo{
 	margin-left: 40%;
 	color: #fff;
 	border: #000000;
+	margin-top: 55px;
 }
+.g1{
+	margin-left: 34%;
+	color: #fff;
+	border: #000000;
+	margin-top: 30px;
+	margin-bottom: -25px;
+}
+.g2{
+	margin-left: 15%;
+	color: #fff;
+	border: #000000;
+	;
+}
+.g3{
+	margin-left: 58%;
+	color: #fff;
+	border: #000000;
+	margin-top: -30px;
+}
+
+.g4{
+	margin-left: 79%;
+	color: #fff;
+	border: #000000;
+	margin-top: -30px;
+}
+	
 /*inicio pagina produto*/
 .video{
 	width: 600px;
@@ -218,10 +249,10 @@ section.container div#conteudo ul#album-fotos li:hover{
 	margin-left: 40px;
 }
 .foto-produto{
-	width: 200px;
-	height: 200px;
+	width: 220px;
+	height: 120px;
 	display: inline;
-	margin-top: -110px;
+	margin-top: -500px;
 }
 .texto{
 	width: 30%;
@@ -231,16 +262,17 @@ section.container div#conteudo ul#album-fotos li:hover{
 	color: #fff;
 }
 .p2{
-	width: 29%;
+	width: 31%;
 	float: right;
 	color: #fff;
-	margin-top: -390px;
+	margin-top: -415px;
+	
 }
 .p3{
-	width: 29%;
+	width: 30%;
 	float: right;
 	color: #fff;
-	margin-top: -370px;
+	margin-top: -380px;
 }
 .botao2{
 	width: 52% ;

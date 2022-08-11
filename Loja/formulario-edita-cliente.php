@@ -1,7 +1,8 @@
 <?php
 include('config.php');
 require_once('repository/ClienteRepository.php');
-
+require_once('repository/LoginRepository.php');
+require_once('validadorAdmin.php');
 $id = $_SESSION['id'];
 $cliente = fnLocalizaClientePorId($id);
 ?>
@@ -42,14 +43,14 @@ $cliente = fnLocalizaClientePorId($id);
     <div class="menu">
         <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">Inicio</a>
+                <a class="navbar-brand" href="index.php">Inicio</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="catalogo.html">Catálogo</a>
+                            <a class="nav-link active" aria-current="page" href="catalogo.php">Catálogo</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Genêros</a>
@@ -65,7 +66,7 @@ $cliente = fnLocalizaClientePorId($id);
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="login.html">Login</a>
+                            <a class="nav-link active" aria-current="page" href="login.php">Login</a>
                         </li>
 
                         <li class="nav-item">
@@ -104,7 +105,7 @@ $cliente = fnLocalizaClientePorId($id);
             <legend>Edição de Cliente</legend>
             <form action="editaCliente.php" method="post" class="form" enctype="multipart/form-data">
                 <div>
-                    <input type="hidden" name="idJogo" id="jogoId" value="<?= $jogo->id ?>">
+                    <input type="hidden" name="idCliente" id="clienteId" value="<?= $cliente->id ?>">
                 </div>
                 <div class="mb-3 form-group">
                     <label for="nomeId" class="form-label">Nome</label>

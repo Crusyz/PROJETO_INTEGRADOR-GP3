@@ -49,13 +49,13 @@
 }
 .nivo-box img { display:block; }
 
-/* Caption styles */
+
 .nivo-caption {
 	position:absolute;
 	left:0px;
 	bottom:0px;
-	background:#000;
-	color:#fff;
+	
+	;
 	width:100%;
 	z-index:8;
 	padding: 5px 10px;
@@ -68,6 +68,7 @@
 	-moz-box-sizing: border-box;    
 	box-sizing: border-box;         
 }
+
 .nivo-caption p {
 	padding:5px;
 	margin:0;
@@ -78,7 +79,7 @@
 .nivo-html-caption {
     display:none;
 }
-/* Direction nav styles (e.g. Next & Prev) */
+
 .nivo-directionNav a {
 	position:absolute;
 	top:45%;
@@ -91,7 +92,7 @@
 .nivo-nextNav {
 	right:0px;
 }
-/* Control nav styles (e.g. 1,2,3...) */
+
 .nivo-controlNav {
 	text-align:center;
 	padding: 15px 0;

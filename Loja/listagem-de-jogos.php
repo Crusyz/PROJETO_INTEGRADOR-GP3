@@ -1,8 +1,10 @@
 <?php
 include('config.php');
 require_once('repository/JogoRepository.php');
-$nome = filter_input(INPUT_GET, 'nome', FILTER_SANITIZE_SPECIAL_CHARS);
+require_once('repository/LoginRepository.php');
 
+$nome = filter_input(INPUT_GET, 'nome', FILTER_SANITIZE_SPECIAL_CHARS);
+$condicao = ($_SESSION['login'] == fnLogin('admin@triplo.com', 'admin@123'));
 ?>
 <!doctype html>
 <html lang="pt_BR">
@@ -45,14 +47,14 @@ $nome = filter_input(INPUT_GET, 'nome', FILTER_SANITIZE_SPECIAL_CHARS);
     <div class="menu">
         <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">Inicio</a>
+                <a class="navbar-brand" href="index.php">Inicio</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="catalogo.html">Catálogo</a>
+                            <a class="nav-link active" aria-current="page" href="catalogo.php">Catálogo</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Genêros</a>
@@ -67,7 +69,7 @@ $nome = filter_input(INPUT_GET, 'nome', FILTER_SANITIZE_SPECIAL_CHARS);
                             <a class="nav-link active" aria-current="page" href="formulario-cadastro-cliente.php">Cadastro</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="login.html">Login</a>
+                            <a class="nav-link active" aria-current="page" href="login.php">Login</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="logout.php">Logout</a>
@@ -75,10 +77,11 @@ $nome = filter_input(INPUT_GET, 'nome', FILTER_SANITIZE_SPECIAL_CHARS);
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="listagem-de-jogos.php">Jogos</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="listagem-de-clientes.php">Clientes</a>
-                        </li>
-
+                        <?php if ($condicao) : ?>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="listagem-de-clientes.php">Clientes</a>
+                            </li>
+                        <?php endif; ?>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Action</a></li>
                             <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -109,7 +112,9 @@ $nome = filter_input(INPUT_GET, 'nome', FILTER_SANITIZE_SPECIAL_CHARS);
                     <th>Lançamento</th>
                     <th>Crítica</th>
                     <th>Data cadastro</th>
-                    <th colspan="2">Gerenciar</th>
+                    <?php if ($condicao) : ?>
+                        <th colspan="2">Gerenciar</th>
+                    <?php endif; ?>
                 </tr>
             </thead>
             <tbody>
@@ -121,9 +126,11 @@ $nome = filter_input(INPUT_GET, 'nome', FILTER_SANITIZE_SPECIAL_CHARS);
                         <td style="background-color: white;"><?= $jogo->lancamento ?></td>
                         <td style="background-color: white;"><?= $jogo->critica ?></td>
                         <td style="background-color: white;"><?= $jogo->created_at ?></td>
-                        <td style="background-color: white;"><a href="#" onclick="gerirUsuario(<?= $jogo->id ?>, 'edit');">Editar</a></td>
-                        <td style="background-color: white;"><a href="#" onclick="return confirm('Deseja realmente excluir?') ? gerirUsuario(<?= $jogo->id ?>, 'del') : '';">Excluir</a>
-                        </td>
+                        <?php if ($condicao) : ?>
+                            <td style="background-color: white;"><a href="#" onclick="gerirUsuario(<?= $jogo->id ?>, 'edit');">Editar</a></td>
+                            <td style="background-color: white;"><a href="#" onclick="return confirm('Deseja realmente excluir?') ? gerirUsuario(<?= $jogo->id ?>, 'del') : '';">Excluir</a>
+                            </td>
+                        <?php endif; ?>
                     </tr>
                 <?php endforeach; ?>
             </tbody>
@@ -136,10 +143,12 @@ $nome = filter_input(INPUT_GET, 'nome', FILTER_SANITIZE_SPECIAL_CHARS);
             <?php endif; ?>
         </table>
     </div>
-    <div>
-        <button type="submit" class="btn btn-dark"><a style="color: white; text-decoration: none;" href="formulario-cadastro-jogo.php">Cadastrar Novo
-                Jogo</a></button>
-    </div>
+    <?php if ($condicao) : ?>
+        <div>
+            <button type="submit" class="btn btn-dark"><a style="color: white; text-decoration: none;" href="formulario-cadastro-jogo.php">Cadastrar Novo
+                    Jogo</a></button>
+        </div>
+    <?php endif; ?>
     <script>
         window.post = (data) => {
             return fetch(

@@ -1,9 +1,9 @@
 .theme-default .nivoSlider {
 	position:relative;
-	background:#fff url(loading.gif) no-repeat 50% 50%;
+	background:rgb(17, 17, 17) url(loading.gif) no-repeat 50% 50%;
     margin-bottom:10px;
-    -webkit-box-shadow: 0px 1px 5px 0px #312ef0;
-    -moz-box-shadow: 0px 1px 5px 0px #d0ff00;
+    -webkit-box-shadow: 0px 1px 5px 0px #000000;
+    -moz-box-shadow: 0px 1px 5px 0px #191a17;
     box-shadow: 0px 1px 5px 0px #a31f1f00;
 	
 }
@@ -27,7 +27,7 @@
 	display:inline-block;
 	width:22px;
 	height:22px;
-	background:url(bullets.png) no-repeat;
+	
 	text-indent:-9999px;
 	border:0;
 	margin: 0 2px;
@@ -68,11 +68,11 @@
     font-family: Helvetica, Arial, sans-serif;
 }
 .theme-default .nivo-caption a {
-    color:#fff;
-    border-bottom:1px dotted #fff;
+    color:rgb(245, 10, 10);
+    border-bottom:1px dotted rgb(236, 9, 9);
 }
 .theme-default .nivo-caption a:hover {
-    color:#fff;
+    color:rgb(238, 11, 11);
 }
 
 .theme-default .nivo-controlNav.nivo-thumbs-enabled {

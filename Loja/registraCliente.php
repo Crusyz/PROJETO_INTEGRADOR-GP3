@@ -1,5 +1,5 @@
 <?php
-
+require_once('repository/LoginRepository.php');
 require_once('repository/ClienteRepository.php');
 
 
@@ -12,6 +12,7 @@ if (empty($nome) || empty($email) || empty($senha)) {
 } else {
     if (fnAddCliente($nome, $email, $senha)) {
         $msg = "Sucesso ao gravar";
+        fnAddLogin($email, $senha);
     } else {
         $msg = "Falha na gravação";
     }

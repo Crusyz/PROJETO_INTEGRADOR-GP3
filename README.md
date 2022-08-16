@@ -2,11 +2,9 @@
 Triplo Games 
 </h1>
 
-## Em desenvolvimento
-
 ## Indice
 
-- [Sobre](#Sobre)
+- [Sobre](#sobre)
 - [Tecnologias ultilizadas](#tecnologias-ultilizadas)
 - [Criadores](#criadores)
 

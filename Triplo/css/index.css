@@ -1,0 +1,302 @@
+section.container div#anuncioproduto{
+    width: 100%;
+    float: left;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(155, 12, 238, 0.089);
+    padding: 5px 0;
+    margin-bottom: 20px;
+}
+section.container div#conteudo ul#album-fotos{
+	width: 88%;
+	margin:auto;
+	background-color:rgba(155, 12, 238, 0.089);
+	padding:50px;
+	list-style:none;
+	overflow:hidden;	
+}
+
+section.container div#conteudo ul#album-fotos li{
+	float:left;
+	width:200px;
+	height:200px;
+	background-color:#ffffff;
+	margin:10px;
+	border:5px solid #9c3397f3;
+	box-shadow:2px 2px 3px rgba(0,0,0,.4);
+    -webkit-transition:0.5s ease-in;
+}
+
+section.container div#conteudo ul#album-fotos li#foto01{
+	background:url(../images/home/csgo.png);
+	background-position:50% 50%;
+	background-size:400px 400px;
+}
+
+section.container div#conteudo ul#album-fotos li#foto02{
+	background:url(../images/home/dayz.png);
+	background-position:50% 50%;
+	background-size:400px 400px;
+}
+
+section.container div#conteudo ul#album-fotos li#foto03{
+	background:url(../images/home/mine.png);
+	background-position:50% 50%;
+	background-size:400px 400px;
+}
+
+section.container div#conteudo ul#album-fotos li#foto04{
+	background:url(../images/home/forza.png);
+	background-position:50% 50%;
+	background-size:400px 400px;
+}
+
+section.container div#conteudo ul#album-fotos li#foto05{
+	background:url(../images/home/r6.png);
+	background-position:50% 50%;
+	background-size:400px 400px;
+}
+
+section.container div#conteudo ul#album-fotos li#foto06{
+	background:url(../images/home/gen.png);
+	background-position:50% 50%;
+	background-size:400px 400px;
+}
+section.container div#conteudo ul#album-fotos li#foto07{
+	background:url(../images/home/raft.png);
+	background-position:50% 50%;
+	background-size:400px 400px;
+}section.container div#conteudo ul#album-fotos li#foto08{
+	background:url(../images/home/gp.png);
+	background-position:50% 50%;
+	background-size:400px 400px;
+}section.container div#conteudo ul#album-fotos li#foto09{
+	background:url(../images/home/valorant.png);
+	background-position:50% 50%;
+	background-size:400px 400px;
+}section.container div#conteudo ul#album-fotos li#foto10{
+	background:url(../images/home/under.png);
+	background-position:50% 50%;
+	background-size:400px 400px;
+}section.container div#conteudo ul#album-fotos li#foto11{
+	background:url(../images/home/ds3.png);
+	background-position:50% 50%;
+	background-size:400px 400px;
+}section.container div#conteudo ul#album-fotos li#foto12{
+	background:url(../images/home/need.png);
+	background-position:50% 50%;
+	background-size:400px 400px;
+}
+
+section.container div#conteudo ul#album-fotos li span{
+	color:#ffffff;
+	text-shadow:1px 1px 1px #000000;
+	background-color:rgba(0,0,0,0.3);
+	font-size:15px;
+	padding:5px;
+	line-height:370px;
+	opacity:0;	
+}
+
+section.container div#conteudo ul#album-fotos li:hover span{
+	opacity:1;
+}
+
+section.container div#conteudo ul#album-fotos li#foto01:hover{
+    background-size: 200px 200px;
+}
+
+section.container div#conteudo ul#album-fotos li#foto02:hover{
+    background-size: 200px 200px;
+}
+
+section.container div#conteudo ul#album-fotos li#foto03:hover{
+    background-size: 200px 200px;
+}
+
+section.container div#conteudo ul#album-fotos li#foto04:hover{
+    background-size: 200px 200px;
+}
+
+section.container div#conteudo ul#album-fotos li#foto05:hover{
+    background-size: 200px 200px;
+}
+
+section.container div#conteudo ul#album-fotos li#foto06:hover{
+    background-size: 200px 200px;
+}
+section.container div#conteudo ul#album-fotos li#foto07:hover{
+    background-size: 200px 200px;
+}
+
+section.container div#conteudo ul#album-fotos li#foto08:hover{
+    background-size: 200px 200px;
+}
+
+section.container div#conteudo ul#album-fotos li#foto09:hover{
+    background-size: 200px 200px;
+}
+
+section.container div#conteudo ul#album-fotos li#foto10:hover{
+    background-size: 200px 200px;
+}
+
+section.container div#conteudo ul#album-fotos li#foto11:hover{
+    background-size: 200px 200px;
+}
+
+section.container div#conteudo ul#album-fotos li#foto12:hover{
+    background-size: 200px 200px;
+}
+
+section.container div#conteudo ul#album-fotos li:hover{
+    -webkit-transform:scale(1.5);
+    -webkit-transition:0.5s ease-in;
+}
+.contents{
+	float: left;
+	width: 55%;
+	margin: 0 0 0 10px;
+}
+.restrito{
+    margin-left: 50%;
+}
+/* catalogo*/
+.main{
+	width: 100%;
+	max-width: 1200px;
+	height: 500px;
+	margin: 0 auto;
+	margin-top: 10px;
+	
+}
+.content-cards{
+	width: 100%;
+	height: auto;
+	border: 2px solid green;
+	
+}
+.card{
+	width: 250px;
+	height: auto; /*255px sem height*/
+	border: 1px solid rgba(155, 12, 238, 0.089);
+	margin: 20px;
+	box-sizing: border-box;
+	padding: 10px;
+	display: inline-flex;
+	background-color: rgba(155, 12, 238, 0.089);
+}
+.card > .imagem-produto{
+	width: 100%;
+
+}
+.card > .titulo-produto{
+	font-size: 20px;
+	font-weight: bold;
+	color: #fff;
+}
+.botao-comprar{
+	width: 100%;
+	height: 40px;
+	background-color: green;
+	border: none;
+}
+.card > .botao-comprar:hover {
+	box-shadow: 5px 5px 5px rgb(0, 0, 0);
+
+}
+.card > .valor{
+	margin-top: -10px;
+	color: #fff;
+}
+.catalogo{
+	margin-left: 40%;
+	color: #fff;
+	border: #000000;
+	margin-top: 55px;
+}
+.g1{
+	margin-left: 34%;
+	color: #fff;
+	border: #000000;
+	margin-top: 30px;
+	margin-bottom: -25px;
+}
+.g2{
+	margin-left: 15%;
+	color: #fff;
+	border: #000000;
+	;
+}
+.g3{
+	margin-left: 58%;
+	color: #fff;
+	border: #000000;
+	margin-top: -30px;
+}
+
+.g4{
+	margin-left: 79%;
+	color: #fff;
+	border: #000000;
+	margin-top: -30px;
+}
+	
+/*inicio pagina produto*/
+.video{
+	width: 600px;
+	margin-top: 30px;
+	margin-left: 40px;
+}
+.foto-produto{
+	width: 220px;
+	height: 120px;
+	display: inline;
+	margin-top: -400px;
+}
+.texto{
+	width: 30%;
+	margin-left: 40px;
+}
+.p1{
+	color: #fff;
+}
+.p2{
+	width: 31%;
+	float: right;
+	color: #fff;
+	margin-top: -415px;
+	
+}
+.p3{
+	width: 30%;
+	float: right;
+	color: #fff;
+	margin-top: -380px;
+}
+.botao2{
+	width: 52% ;
+	height: 40px;
+	background-color: green;
+	border: none;
+	margin-top: -327px;
+	float: right ;
+}
+.p4{
+	width: 52%;
+	float: right;
+	color: #fff;
+	margin-top: -280px;
+}
+.p5{
+	width: 52%;
+	float: right;
+	color: #fff;
+	margin-top: -180px;
+	
+}
+.destaque{
+	color: #fff;
+	padding-left: 30%;
+}
+

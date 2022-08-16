@@ -1,0 +1,16 @@
+{
+    "name": "gp3/loja",
+    "description": "Loja de jogos",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "marhvi",
+            "email": "mvjs2004@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "phpmailer/phpmailer": "dev-master"
+    }
+}
